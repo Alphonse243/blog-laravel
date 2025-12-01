@@ -14,4 +14,11 @@ class ArticleController extends Controller
         $Users = User::paginate(10);
         return view('admin.index', compact('Articles','Users'));
     }
+
+     public function admin()
+    {
+        $Articles = Article::paginate(10);
+        $Users = User::paginate(10);
+        return view('admin.admin', compact('Articles','Users'));
+    }
 }

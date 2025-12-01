@@ -12,6 +12,8 @@ Route::get('/', function () {
 
 Route::get('admin/index', [ArticleController::class,'index'])->name('admin.index');
 
+Route::get('admin/', [ArticleController::class,'admin'])->name('admin');
+
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])
     ->name('dashboard');

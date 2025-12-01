@@ -1,4 +1,4 @@
-<x-layouts.app>
+<x-layouts.app  :title="INDEX">
    
 
 <div class="p-4 bg-gray-50 min-h-screen">
