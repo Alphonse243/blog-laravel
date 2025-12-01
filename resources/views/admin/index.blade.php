@@ -1,19 +1,5 @@
 <x-layouts.app>
-    {{-- <h1>PAge amdin index</h1> --}}
-    {{-- @foreach($Articles as $article) --}}
-        {{-- <div>
-            <h2>{{ $article->title }}</h2> --}}
-            {{-- <p>{{ $article->content }}</p> --}}
-        {{-- </div>
-         --}}
-    {{-- @endforeach --}}
-    {{-- {{ $Articles->links() }} --}}
-    <?php 
-        // foreach($Articles as $article){
-        //     echo $article->title.'<br>';
-        // };
-    ?>
-
+   
 
 <div class="p-4 bg-gray-50 min-h-screen">
 
@@ -156,27 +142,27 @@
   </div>
 </div>
     <script>
-        // Script pour l'animation d'apparition progressive (Fade In)
+        // // Script pour l'animation d'apparition progressive (Fade In)
 
-        document.addEventListener('DOMContentLoaded', () => {
-        // Cibler la ligne et la carte à animer
-        const rowToAnimate = document.getElementById('project-3');
-        const cardToAnimate = document.getElementById('card-3');
+        // document.addEventListener('DOMContentLoaded', () => {
+        // // Cibler la ligne et la carte à animer
+        // const rowToAnimate = document.getElementById('project-3');
+        // const cardToAnimate = document.getElementById('card-3');
 
-        // Ajouter la classe d'opacité après un court délai (100ms)
-        // Cela donne l'impression que les données se chargent progressivement.
-        setTimeout(() => {
-            if (rowToAnimate) {
-                // Utiliser une transition CSS pour une apparition douce
-                rowToAnimate.classList.remove('opacity-0');
-                rowToAnimate.classList.add('opacity-100', 'transition', 'duration-500', 'ease-out');
-            }
-            if (cardToAnimate) {
-                cardToAnimate.classList.remove('opacity-0');
-                cardToAnimate.classList.add('opacity-100', 'transition', 'duration-500', 'ease-out');
-            }
-        }, 100); 
-        // La première ligne/carte pourrait être animée à 0ms, la seconde à 50ms, la troisième à 100ms, etc.
-        });
+        // // Ajouter la classe d'opacité après un court délai (100ms)
+        // // Cela donne l'impression que les données se chargent progressivement.
+        // setTimeout(() => {
+        //     if (rowToAnimate) {
+        //         // Utiliser une transition CSS pour une apparition douce
+        //         rowToAnimate.classList.remove('opacity-0');
+        //         rowToAnimate.classList.add('opacity-100', 'transition', 'duration-500', 'ease-out');
+        //     }
+        //     if (cardToAnimate) {
+        //         cardToAnimate.classList.remove('opacity-0');
+        //         cardToAnimate.classList.add('opacity-100', 'transition', 'duration-500', 'ease-out');
+        //     }
+        // }, 100); 
+        // // La première ligne/carte pourrait être animée à 0ms, la seconde à 50ms, la troisième à 100ms, etc.
+        // });
     </script>
 </x-layouts.app> 
