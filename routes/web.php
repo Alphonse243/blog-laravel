@@ -4,9 +4,13 @@ use Illuminate\Support\Facades\Route;
 use Laravel\Fortify\Features;
 use Livewire\Volt\Volt;
 
+use App\Http\Controllers\ArticleController;
+
 Route::get('/', function () {
     return view('welcome');
 })->name('home');
+
+Route::get('admin/index', [ArticleController::class,'index'])->name('admin.index');
 
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])
